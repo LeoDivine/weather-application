@@ -1,11 +1,17 @@
+import { getWeatherInfo } from "./controllers/weather-controller";
+
+const nigeria = await getWeatherInfo("Nigeria");
+const durban = await getWeatherInfo("Durban");
+const india = await getWeatherInfo("India");
+
 export const DUMMYDATA: WeatherCardProps[] = [
   {
-    location: "Nigeria",
-    temperature: "33",
+    location: nigeria.name,
+    temperature: nigeria.main.temp,
   },
   {
-    location: "Durban",
-    temperature: "45",
+    location: durban.name,
+    temperature: durban.main.temp,
   },
-  { location: "South Africa", temperature: "55" },
+  { location: india.name, temperature: india.main.temp },
 ];

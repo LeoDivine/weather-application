@@ -5,12 +5,12 @@ export default function TempFormatter({
   value,
 }: {
   className?: string;
-  value: string;
+  value: number;
 }) {
   return (
     <span className="flex flex-row ">
-      <p className={className}>{value}</p>
-      <p className={!className ? "text-[13px]" : "text-[50px]"}>°F</p>
+      <p className={className}>{(((value - 32) * 5) / 9).toFixed()}</p>
+      <p className={!className ? "text-[13px]" : "text-[50px]"}>°C</p>
     </span>
   );
 }
