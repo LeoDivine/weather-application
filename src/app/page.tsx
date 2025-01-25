@@ -1,7 +1,6 @@
 import SearchInput from "@/components/shared/search";
 import WeatherCard from "@/components/shared/weather-cards";
 import { DUMMYDATA } from "@/lib/const";
-import { getWeatherInfo } from "@/lib/controllers/weather-controller";
 import React from "react";
 
 async function Intro() {

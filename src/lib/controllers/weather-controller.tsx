@@ -1,4 +1,3 @@
-import NotFound from "@/app/search/not-found";
 
 const apiSecret = process.env.API_SECRET;
 

@@ -1,8 +1,7 @@
 import React from "react";
 
-export default function MaxWidth({ children }: { children: React.ReactNode }) {
+export default function MaxWidth({children}:{children?: React.ReactNode}) {
 
-  const date = new Date().getFullYear();
   return (
     <div className=" max-w-5xl p-[20px] mt-[20px]  lg:p-0 mx-auto">
       {children}

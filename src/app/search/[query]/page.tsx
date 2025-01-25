@@ -6,7 +6,6 @@ import {
   CloudFog,
   CloudLightning,
   CloudRain,
-  CloudRainIcon,
   CloudRainWind,
   CloudSun,
   Cloudy,
@@ -15,15 +14,12 @@ import {
   RefreshCwOff,
   Shell,
   Snowflake,
-  Sun,
   SunIcon,
   Thermometer,
   Waves,
   WindArrowDown,
   WindIcon,
 } from "lucide-react";
-import Image from "next/image";
-import { redirect } from "next/navigation";
 import React from "react";
 import NotFound from "../not-found";
 

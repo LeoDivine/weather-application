@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className}  bg-primary antialiased`}>
-        <MaxWidth children={children} />
+        <MaxWidth>{children}</MaxWidth>
         <p className=" text-[12px] mt-[100px] text-center text-white">
           © Copyright {date}: Divine Onyekachukwu
         </p>
-      </body>
+      </body> 
     </html>
   );
 }

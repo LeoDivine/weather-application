@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function NotFound() {
   return (
-    <div className=" text-white w-[80%] mx-auto flex items-center justify-center flex-col bg-primary">
+    <div className=" text-white w-[80%] mx-auto my-[200px] flex items-center justify-center flex-col bg-primary">
       <Frown className="w-20 h-20 " />
       <p
         className="mt-[10px] text-[30px] text-center
