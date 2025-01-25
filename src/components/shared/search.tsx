@@ -16,7 +16,7 @@ export default function SearchInput() {
     setSearchValue(value);
   };
   return (
-    <div className=" w-[60%] mx-auto ">
+    <div className=" w-full lg:w-[60%] mx-auto ">
       <form className=" gap-3 flex" onSubmit={handleSubmit}>
         <div className=" w-full relative">
           <Search className=" top-2 ml-[14px] absolute" />
@@ -29,7 +29,7 @@ export default function SearchInput() {
           />
         </div>
         <Input
-          className=" cursor-pointer rounded-full w-[15%] bg-[#333] border-none text-[#fff]"
+          className=" hidden lg:inline cursor-pointer rounded-full w-[15%] bg-[#333] border-none text-[#fff]"
           type="submit"
           value="Submit"
         />

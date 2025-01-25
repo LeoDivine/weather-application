@@ -1,3 +1,5 @@
+"use client"
+import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function TempFormatter({
@@ -6,10 +8,16 @@ export default function TempFormatter({
 }: {
   className?: string;
   value: number;
-}) {
+  }) {
+  const pathname = usePathname()
   return (
-    <span className="flex flex-row ">
-      <p className={className}>{(((value - 32) * 5) / 9).toFixed()}</p>
+    <span
+      className={`${
+        pathname === "/" ? "justify-start flex " : "flex justify-center lg:justify-start flex-row"
+      }`}
+    >
+      {/*Kelvin to celsius*/}
+      <p className={className}>{(value - 273.15).toFixed()}</p>{" "}
       <p className={!className ? "text-[13px]" : "text-[50px]"}>°C</p>
     </span>
   );

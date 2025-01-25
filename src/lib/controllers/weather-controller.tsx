@@ -17,17 +17,18 @@ export const getWeatherInfo = async (location: string) => {
   }
 };
 
-export const getAllLocation = async () => {
-  try {
-    const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather&appid=${apiSecret}`
-    );
-    const data = await response.json();
-    if (!response.ok) {
-      return undefined;
-    }
-    return data.name;
-  } catch (e) {
-    console.log(e);
-  }
-};
+// export const getAllLocation = async () => {
+//   try {
+//     const response = await fetch(
+//       `https://api.openweathermap.org/data/2.5/weather?appid=${apiSecret}`
+//     );
+//     const data = await response.json();
+//     if (!response.ok) {
+//       console.log({ data });
+//       return undefined;
+//     }
+//     return data.name;
+//   } catch (e) {
+//     console.log(e);
+//   }
+// };
