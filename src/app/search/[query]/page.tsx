@@ -65,7 +65,7 @@ export default async function InfoPage({
                 <WindIcon />
                 <p>Wind</p>
               </span>
-              <p className="text-[25px]">{weatherInfo.wind.speed} mp/h</p>
+              <p className="text-[25px]">{weatherInfo.wind.speed} m/s</p>
             </div>
             <div className="">
               <span className=" flex items-center gap-2 mt-[10px] ">
@@ -107,7 +107,7 @@ export default async function InfoPage({
             <RefreshCwOff className="w-[190px] h-[190px]" />
           )}
         </div>
-        <div className=" p-[20px] lg:w-[250px] w-full flex flex-col gap-4 rounded-[10px] border border-[#adadad] bg-[#333333be] ">
+        <div className=" p-[20px] lg:w-[300px] w-full flex flex-col gap-4 rounded-[10px] border border-[#adadad] bg-[#333333be] ">
           <span className="flex gap-2 items-center">
             <WindArrowDown />
             <p>Pressure: </p>
@@ -121,12 +121,12 @@ export default async function InfoPage({
           <span className="flex gap-2 items-center">
             <Waves />
             <p>Sea Level: </p>
-            <p>{weatherInfo.main.sea_level} atm</p>
+            <p>{weatherInfo.main.sea_level} hPa</p>
           </span>
           <span className="flex gap-2 items-center">
             <Shell />
             <p>Ground Level: </p>
-            <TempFormatter value={weatherInfo.main.grnd_level} />
+            <p>{weatherInfo.main.grnd_level} hPa</p>
           </span>
         </div>
       </div>
